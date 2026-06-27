@@ -6,6 +6,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon32x32.png">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 
+    <!-- Primary Meta Tags -->
     <title>MUQARANA-CCE</title>
     <meta name="title" content="MUQARANA CCE">
     <meta name="description" content="ONLINE ASSESSMENT SYSTEM">
@@ -59,6 +60,7 @@
             display: none !important;
         }
 
+        /* Mobile-first responsive navigation */
         .nav-btn {
             padding: 0.5rem 1rem;
             margin: 0 0.25rem;
@@ -98,7 +100,6 @@
         .page-content {
             padding: 1rem 0;
         }
-
         @media (min-width: 768px) {
             .page-content {
                 padding: 2rem 0;
@@ -108,19 +109,18 @@
         .main-container {
             padding: 0.5rem;
         }
-
         @media (min-width: 768px) {
             .main-container {
                 padding: 1rem;
             }
         }
-
         @media (min-width: 1024px) {
             .main-container {
                 padding: 1.5rem;
             }
         }
 
+        /* Subject card styles */
         .subject-card {
             background: white;
             border-radius: 12px;
@@ -130,13 +130,11 @@
             transition: all 0.3s ease;
             cursor: pointer;
         }
-
         @media (min-width: 768px) {
             .subject-card {
                 padding: 1.5rem;
             }
         }
-
         .subject-card:hover {
             border-color: #059669;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -150,7 +148,6 @@
             padding: 0.5rem;
             cursor: pointer;
         }
-
         @media (min-width: 768px) {
             .subject-header {
                 padding: 1rem;
@@ -170,7 +167,6 @@
             margin-right: 0.75rem;
             flex-shrink: 0;
         }
-
         @media (min-width: 768px) {
             .subject-icon {
                 width: 3rem;
@@ -186,18 +182,15 @@
             color: #1f2937;
             margin-bottom: 0.25rem;
         }
-
         @media (min-width: 768px) {
             .subject-info h3 {
                 font-size: 1.25rem;
             }
         }
-
         .subject-info p {
             color: #6b7280;
             font-size: 0.75rem;
         }
-
         @media (min-width: 768px) {
             .subject-info p {
                 font-size: 0.875rem;
@@ -213,7 +206,6 @@
             font-weight: 600;
             white-space: nowrap;
         }
-
         @media (min-width: 768px) {
             .task-count-badge {
                 padding: 0.5rem 1rem;
@@ -228,14 +220,12 @@
             margin-left: 0.5rem;
             flex-shrink: 0;
         }
-
         @media (min-width: 768px) {
             .expand-arrow {
                 font-size: 1rem;
                 margin-left: 1rem;
             }
         }
-
         .expand-arrow.expanded {
             transform: rotate(180deg);
         }
@@ -244,13 +234,11 @@
             padding: 0 0.5rem 0.5rem 0.5rem;
             display: none;
         }
-
         @media (min-width: 768px) {
             .tasks-container {
                 padding: 0 1rem 1rem 1rem;
             }
         }
-
         .tasks-container.expanded {
             display: block;
         }
@@ -263,14 +251,12 @@
             margin-bottom: 0.75rem;
             transition: all 0.2s ease;
         }
-
         @media (min-width: 768px) {
             .task-item {
                 padding: 1rem;
                 margin-bottom: 1rem;
             }
         }
-
         .task-item:hover {
             border-color: #059669;
             background: #f0fdf4;
@@ -284,7 +270,6 @@
             flex-wrap: wrap;
             gap: 0.5rem;
         }
-
         .task-id-badge {
             background: #e5e7eb;
             color: #374151;
@@ -294,7 +279,6 @@
             font-weight: 600;
             font-family: monospace;
         }
-
         .task-status {
             font-size: 0.75rem;
             font-weight: 600;
@@ -302,17 +286,14 @@
             border-radius: 0.25rem;
             white-space: nowrap;
         }
-
         .status-completed {
             background: #dcfce7;
             color: #166534;
         }
-
         .status-pending {
             background: #dbeafe;
             color: #1e40af;
         }
-
         .status-overdue {
             background: #fee2e2;
             color: #dc2626;
@@ -325,26 +306,22 @@
             font-size: 0.875rem;
             line-height: 1.4;
         }
-
         @media (min-width: 768px) {
             .task-title {
                 font-size: 1rem;
             }
         }
-
         .task-description {
             color: #6b7280;
             font-size: 0.75rem;
             line-height: 1.5;
             margin-bottom: 0.75rem;
         }
-
         @media (min-width: 768px) {
             .task-description {
                 font-size: 0.875rem;
             }
         }
-
         .task-due-date {
             color: #6b7280;
             font-size: 0.75rem;
@@ -352,7 +329,6 @@
             align-items: center;
             flex-wrap: wrap;
         }
-
         .task-due-date i {
             margin-right: 0.25rem;
         }
@@ -362,7 +338,6 @@
             padding-top: 0.75rem;
             border-top: 1px solid #e5e7eb;
         }
-
         .upload-btn {
             background: #3b82f6;
             color: white;
@@ -375,20 +350,16 @@
             border: none;
             white-space: nowrap;
         }
-
         .upload-btn:hover {
             background: #2563eb;
         }
-
         .upload-btn:disabled {
             background: #9ca3af;
             cursor: not-allowed;
         }
-
         .upload-btn.uploaded {
             background: #059669;
         }
-
         .upload-status {
             font-size: 0.75rem;
             margin-top: 0.25rem;
@@ -396,23 +367,20 @@
             align-items: center;
             gap: 0.5rem;
         }
-
         .upload-status.success {
             color: #059669;
         }
-
         .upload-status.error {
             color: #dc2626;
         }
-
         .upload-status.uploading {
             color: #3b82f6;
         }
-
         .file-input-hidden {
             display: none;
         }
 
+        /* Admin filter */
         .admin-filter-section {
             background: white;
             border-radius: 12px;
@@ -420,39 +388,33 @@
             margin-bottom: 1.5rem;
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
         }
-
         @media (min-width: 768px) {
             .admin-filter-section {
                 padding: 1.5rem;
                 margin-bottom: 2rem;
             }
         }
-
         .filter-grid {
             display: grid;
             grid-template-columns: 1fr;
             gap: 1rem;
             align-items: end;
         }
-
         @media (min-width: 768px) {
             .filter-grid {
                 grid-template-columns: 1fr 1fr 1fr;
             }
         }
-
         .filter-group {
             display: flex;
             flex-direction: column;
         }
-
         .filter-label {
             font-weight: 600;
             color: #374151;
             margin-bottom: 0.5rem;
             font-size: 0.875rem;
         }
-
         .filter-select {
             padding: 0.75rem;
             border: 2px solid #e5e7eb;
@@ -461,53 +423,55 @@
             transition: border-color 0.2s ease;
             background: white;
         }
-
         .filter-select:focus {
             outline: none;
             border-color: #3b82f6;
             box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
         }
 
+        /* Students grid */
         .students-grid {
             display: grid;
             grid-template-columns: 1fr;
             gap: 1rem;
         }
-
         @media (min-width: 640px) {
             .students-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
         }
-
         @media (min-width: 1024px) {
             .students-grid {
-                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             }
         }
 
+        /* Student card with expand */
         .student-card {
             background: white;
             border-radius: 12px;
-            padding: 1rem;
             border: 2px solid #e5e7eb;
             transition: all 0.3s ease;
             cursor: pointer;
-            text-align: center;
+            overflow: hidden;
         }
-
-        @media (min-width: 768px) {
-            .student-card {
-                padding: 1.5rem;
-            }
-        }
-
         .student-card:hover {
             border-color: #3b82f6;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            transform: translateY(-2px);
         }
-
+        .student-card.expanded {
+            border-color: #3b82f6;
+            box-shadow: 0 4px 16px rgba(59, 130, 246, 0.15);
+        }
+        .student-card-inner {
+            padding: 1rem;
+            text-align: center;
+        }
+        @media (min-width: 768px) {
+            .student-card-inner {
+                padding: 1.5rem;
+            }
+        }
         .student-avatar {
             width: 2.5rem;
             height: 2.5rem;
@@ -521,7 +485,6 @@
             font-size: 1rem;
             margin: 0 auto 0.75rem auto;
         }
-
         @media (min-width: 768px) {
             .student-avatar {
                 width: 3rem;
@@ -530,32 +493,27 @@
                 margin-bottom: 1rem;
             }
         }
-
         .student-name {
             font-weight: 700;
             color: #1f2937;
             margin-bottom: 0.25rem;
             font-size: 0.875rem;
         }
-
         @media (min-width: 768px) {
             .student-name {
                 font-size: 1rem;
             }
         }
-
         .student-username {
             color: #6b7280;
             font-size: 0.75rem;
             margin-bottom: 0.5rem;
         }
-
         @media (min-width: 768px) {
             .student-username {
                 font-size: 0.875rem;
             }
         }
-
         .student-class {
             background: #dbeafe;
             color: #1e40af;
@@ -565,7 +523,180 @@
             font-weight: 600;
             display: inline-block;
         }
+        .edit-points-btn {
+            background: linear-gradient(135deg, #3b82f6, #2563eb);
+            color: white;
+            padding: 0.375rem 0.75rem;
+            border-radius: 0.375rem;
+            font-size: 0.75rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border: none;
+            white-space: nowrap;
+        }
+        .edit-points-btn:hover {
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            transform: translateY(-1px);
+        }
+        .edit-points-btn:disabled {
+            background: #9ca3af;
+            cursor: not-allowed;
+            transform: none;
+        }
 
+        /* Student expand content */
+        .student-expand-content {
+            border-top: 2px solid #e5e7eb;
+            background: #f8fafc;
+            display: none;
+            padding: 0 1rem 1rem 1rem;
+        }
+        .student-expand-content.open {
+            display: block;
+            animation: expandSlide 0.3s ease-out;
+        }
+        @keyframes expandSlide {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .student-expand-content .expand-task-item {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.5rem;
+            padding: 0.75rem;
+            margin-top: 0.75rem;
+        }
+        .student-expand-content .expand-task-item:first-child {
+            margin-top: 0.75rem;
+        }
+        .student-expand-content .expand-task-item:last-child {
+            margin-bottom: 0;
+        }
+        .student-expand-content .expand-task-item .task-meta {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .student-expand-content .expand-task-item .task-meta .task-id {
+            font-weight: 600;
+            color: #1e40af;
+            font-size: 0.8rem;
+        }
+        .student-expand-content .expand-task-item .task-meta .task-status-badge {
+            font-size: 0.7rem;
+            padding: 0.2rem 0.6rem;
+            border-radius: 0.25rem;
+            font-weight: 600;
+        }
+        .student-expand-content .expand-task-item .task-meta .task-status-badge.complete {
+            background: #dcfce7;
+            color: #166534;
+        }
+        .student-expand-content .expand-task-item .task-meta .task-status-badge.pending {
+            background: #dbeafe;
+            color: #1e40af;
+        }
+        .student-expand-content .expand-task-item .task-title-expand {
+            font-weight: 600;
+            color: #1f2937;
+            font-size: 0.9rem;
+            margin-bottom: 0.25rem;
+        }
+        .student-expand-content .expand-task-item .task-desc-expand {
+            color: #6b7280;
+            font-size: 0.8rem;
+            margin-bottom: 0.5rem;
+        }
+        .student-expand-content .expand-task-item .upload-actions {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+            padding-top: 0.5rem;
+            border-top: 1px solid #e5e7eb;
+        }
+        .student-expand-content .expand-task-item .upload-actions .file-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+            font-size: 0.75rem;
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .student-expand-content .expand-task-item .upload-actions .file-link:hover {
+            text-decoration: underline;
+        }
+        .student-expand-content .expand-task-item .upload-actions .points-group {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+        .student-expand-content .expand-task-item .upload-actions .points-group label {
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: #374151;
+        }
+        .student-expand-content .expand-task-item .upload-actions .points-group input {
+            width: 70px;
+            padding: 0.3rem 0.4rem;
+            border: 1px solid #d1d5db;
+            border-radius: 0.3rem;
+            font-size: 0.8rem;
+            text-align: center;
+        }
+        .student-expand-content .expand-task-item .upload-actions .points-group input:focus {
+            outline: none;
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+        }
+        .student-expand-content .expand-task-item .upload-actions .save-points-btn {
+            background: #059669;
+            color: white;
+            padding: 0.25rem 0.6rem;
+            border-radius: 0.3rem;
+            font-size: 0.7rem;
+            font-weight: 500;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            white-space: nowrap;
+        }
+        .student-expand-content .expand-task-item .upload-actions .save-points-btn:hover {
+            background: #047857;
+        }
+        .student-expand-content .expand-task-item .upload-actions .save-points-btn:disabled {
+            background: #9ca3af;
+            cursor: not-allowed;
+        }
+        .student-expand-content .expand-task-item .no-upload {
+            color: #9ca3af;
+            font-size: 0.75rem;
+            font-style: italic;
+        }
+        .expand-toggle-icon {
+            transition: transform 0.3s ease;
+            display: inline-block;
+            font-size: 0.8rem;
+            color: #6b7280;
+        }
+        .expand-toggle-icon.rotated {
+            transform: rotate(180deg);
+        }
+
+        /* Modal styles */
         .task-assignment-modal {
             position: fixed;
             top: 0;
@@ -579,7 +710,6 @@
             z-index: 1000;
             padding: 1rem;
         }
-
         .task-assignment-modal-content {
             background: white;
             border-radius: 1rem;
@@ -588,7 +718,6 @@
             max-height: 90vh;
             overflow-y: auto;
         }
-
         .admin-task-item {
             background: #f9fafb;
             border: 2px solid #e5e7eb;
@@ -597,24 +726,20 @@
             margin-bottom: 0.75rem;
             transition: all 0.2s ease;
         }
-
         @media (min-width: 768px) {
             .admin-task-item {
                 padding: 1rem;
             }
         }
-
         .admin-task-item:hover {
             border-color: #3b82f6;
             background: #eff6ff;
         }
-
         .admin-task-item.completed {
             background: #f0fdf4;
             border-color: #22c55e;
             opacity: 0.7;
         }
-
         .task-checkbox {
             width: 1rem;
             height: 1rem;
@@ -629,18 +754,15 @@
             border-top: 1px solid #e5e7eb;
             display: none;
         }
-
         .grade-section.show {
             display: block;
         }
-
         .grade-input-group {
             display: flex;
             align-items: center;
             gap: 0.5rem;
             flex-wrap: wrap;
         }
-
         .grade-input {
             width: 80px;
             padding: 0.5rem;
@@ -649,13 +771,11 @@
             font-size: 0.875rem;
             text-align: center;
         }
-
         .grade-input:focus {
             outline: none;
             border-color: #3b82f6;
             box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
         }
-
         .grade-label {
             font-size: 0.875rem;
             color: #6b7280;
@@ -677,7 +797,6 @@
             min-height: 50px;
             touch-action: manipulation;
         }
-
         @media (max-width: 768px) {
             .submit-btn {
                 padding: 0.75rem 1.5rem;
@@ -688,13 +807,11 @@
                 box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
             }
         }
-
         .submit-btn:hover {
             background: linear-gradient(135deg, #059669, #047857);
             transform: translateY(-1px);
             box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
         }
-
         .submit-btn:disabled {
             background: #9ca3af;
             cursor: not-allowed;
@@ -708,19 +825,16 @@
             gap: 1rem;
             margin-top: 1.5rem;
         }
-
         @media (min-width: 640px) {
             .subject-points-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
         }
-
         @media (min-width: 1024px) {
             .subject-points-grid {
                 grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             }
         }
-
         .subject-points-card {
             background: white;
             border-radius: 0.75rem;
@@ -728,44 +842,37 @@
             border: 2px solid #e5e7eb;
             text-align: center;
         }
-
         @media (min-width: 768px) {
             .subject-points-card {
                 padding: 1.5rem;
             }
         }
-
         .subject-points-card h4 {
             font-weight: 700;
             color: #1f2937;
             margin-bottom: 0.5rem;
             font-size: 0.875rem;
         }
-
         @media (min-width: 768px) {
             .subject-points-card h4 {
                 font-size: 1rem;
             }
         }
-
         .points-display {
             font-size: 1.5rem;
             font-weight: 800;
             color: #059669;
         }
-
         @media (min-width: 768px) {
             .points-display {
                 font-size: 2rem;
             }
         }
-
         .points-label {
             font-size: 0.75rem;
             color: #6b7280;
             margin-top: 0.25rem;
         }
-
         @media (min-width: 768px) {
             .points-label {
                 font-size: 0.875rem;
@@ -777,7 +884,6 @@
             height: 250px;
             width: 100%;
         }
-
         @media (min-width: 768px) {
             .chart-container {
                 height: 300px;
@@ -791,7 +897,6 @@
             flex-wrap: wrap;
             gap: 0.5rem;
         }
-
         .header-info {
             display: flex;
             items-center;
@@ -799,24 +904,20 @@
             min-width: 0;
             flex: 1;
         }
-
         .header-title {
             font-size: 1.125rem;
             font-weight: bold;
             min-width: 0;
         }
-
         @media (min-width: 768px) {
             .header-title {
                 font-size: 1.25rem;
             }
         }
-
         .header-subtitle {
             font-size: 0.75rem;
             opacity: 0.9;
         }
-
         @media (min-width: 768px) {
             .header-subtitle {
                 font-size: 0.875rem;
@@ -828,14 +929,12 @@
             width: 2.5rem;
             height: 2.5rem;
         }
-
         @media (min-width: 768px) {
             .profile-pic-container {
                 width: 3rem;
                 height: 3rem;
             }
         }
-
         .profile-pic {
             width: 100%;
             height: 100%;
@@ -851,7 +950,6 @@
             -webkit-font-smoothing: antialiased;
             will-change: transform;
         }
-
         @media (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi) {
             .profile-pic {
@@ -859,12 +957,10 @@
                 image-rendering: crisp-edges;
             }
         }
-
         .profile-pic:hover {
             border-color: rgba(255, 255, 255, 0.6);
             transform: scale(1.05);
         }
-
         .profile-pic-fallback {
             width: 100%;
             height: 100%;
@@ -877,7 +973,6 @@
             font-size: 1rem;
             border: 2px solid rgba(255, 255, 255, 0.3);
         }
-
         @media (min-width: 768px) {
             .profile-pic-fallback {
                 font-size: 1.2rem;
@@ -891,7 +986,6 @@
             z-index: 1000;
             min-width: 200px;
         }
-
         .profile-menu-content {
             background: white;
             border-radius: 0.75rem;
@@ -900,7 +994,6 @@
             overflow: hidden;
             animation: profileMenuSlide 0.2s ease-out;
         }
-
         @keyframes profileMenuSlide {
             from {
                 opacity: 0;
@@ -911,29 +1004,24 @@
                 transform: translateY(0);
             }
         }
-
         .profile-info {
             padding: 1rem;
             background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
         }
-
         .profile-name {
             font-weight: 600;
             color: #1f2937;
             font-size: 0.875rem;
             margin-bottom: 0.25rem;
         }
-
         .profile-username {
             color: #6b7280;
             font-size: 0.75rem;
         }
-
         .profile-menu-divider {
             height: 1px;
             background-color: #e5e7eb;
         }
-
         .profile-menu-item {
             width: 100%;
             padding: 0.75rem 1rem;
@@ -947,20 +1035,16 @@
             display: flex;
             align-items: center;
         }
-
         .profile-menu-item:hover {
             background-color: #f3f4f6;
             color: #dc2626;
         }
-
         .profile-menu-item i {
             color: #6b7280;
         }
-
         .profile-menu-item:hover i {
             color: #dc2626;
         }
-
         @media (max-width: 768px) {
             .profile-menu {
                 right: -1rem;
@@ -973,7 +1057,6 @@
             width: 100%;
             max-width: 400px;
         }
-
         @media (min-width: 768px) {
             .login-container {
                 padding: 2rem;
@@ -1004,7 +1087,6 @@
             border-top-color: #3b82f6;
             animation: spin 1s ease-in-out infinite;
         }
-
         @keyframes spin {
             to {
                 transform: rotate(360deg);
@@ -1012,7 +1094,6 @@
         }
 
         @media (prefers-reduced-motion: reduce) {
-
             *,
             *::before,
             *::after {
@@ -1047,7 +1128,6 @@
         #addTaskModal input:read-only {
             cursor: not-allowed;
         }
-
         #addTaskModal textarea {
             resize: vertical;
             min-height: 80px;
@@ -1067,7 +1147,6 @@
             border-radius: 0.375rem;
             border: 1px solid #bae6fd;
         }
-
         .upload-preview .file-info {
             font-size: 0.75rem;
             color: #0369a1;
@@ -1088,11 +1167,9 @@
             align-items: center;
             gap: 0.25rem;
         }
-
         .download-btn:hover {
             background: #1d4ed8;
         }
-
         .view-btn {
             background: #059669;
             color: white;
@@ -1108,250 +1185,33 @@
             align-items: center;
             gap: 0.25rem;
         }
-
         .view-btn:hover {
             background: #047857;
         }
 
-        .edit-points-btn {
-            background: linear-gradient(135deg, #3b82f6, #2563eb);
-            color: white;
-            padding: 0.375rem 0.75rem;
-            border-radius: 0.375rem;
-            font-size: 0.75rem;
-            font-weight: 500;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            border: none;
-            white-space: nowrap;
-        }
-
-        .edit-points-btn:hover {
-            background: linear-gradient(135deg, #2563eb, #1d4ed8);
-            transform: translateY(-1px);
-        }
-
-        .edit-points-btn:disabled {
-            background: #9ca3af;
-            cursor: not-allowed;
-            transform: none;
-        }
-
-        /* ===== Upload User Card Styles ===== */
-        .upload-user-card {
-            background: white;
-            border-radius: 12px;
-            padding: 1rem;
-            border: 2px solid #e5e7eb;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            margin-bottom: 1rem;
-        }
-
-        @media (min-width: 768px) {
-            .upload-user-card {
-                padding: 1.5rem;
-            }
-        }
-
-        .upload-user-card:hover {
-            border-color: #3b82f6;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        }
-
-        .upload-user-card .upload-count-badge {
-            background: #dbeafe;
-            color: #1e40af;
-            padding: 0.25rem 0.75rem;
-            border-radius: 1rem;
-            font-size: 0.75rem;
-            font-weight: 600;
-        }
-
-        .upload-user-card .upload-count-badge.has-uploads {
-            background: #dcfce7;
-            color: #166534;
-        }
-
-        .upload-user-card .upload-count-badge.no-uploads {
-            background: #f3f4f6;
-            color: #6b7280;
-        }
-
-        .upload-user-card .upload-details-container {
-            display: none;
-            margin-top: 1rem;
-            padding-top: 1rem;
-            border-top: 2px solid #e5e7eb;
-        }
-
-        .upload-user-card .upload-details-container.expanded {
-            display: block;
-        }
-
-        .upload-user-card .upload-item {
-            background: #f9fafb;
-            border: 1px solid #e5e7eb;
-            border-radius: 0.5rem;
-            padding: 0.75rem;
-            margin-bottom: 0.75rem;
-            transition: all 0.2s ease;
-        }
-
-        .upload-user-card .upload-item:hover {
-            border-color: #3b82f6;
-            background: #eff6ff;
-        }
-
-        .upload-user-card .upload-item:last-child {
-            margin-bottom: 0;
-        }
-
-        .upload-user-card .upload-item .upload-file-name {
-            font-weight: 600;
-            color: #1f2937;
-            font-size: 0.875rem;
-        }
-
-        .upload-user-card .upload-item .upload-meta {
-            color: #6b7280;
-            font-size: 0.75rem;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem 1rem;
-            margin-top: 0.25rem;
-        }
-
-        .upload-user-card .upload-item .upload-actions {
-            display: flex;
-            gap: 0.5rem;
-            margin-top: 0.5rem;
-            flex-wrap: wrap;
-        }
-
-        .upload-user-card .no-uploads-msg {
+        /* Empty state for uploads */
+        .no-uploads-msg {
             color: #9ca3af;
+            font-size: 0.85rem;
             text-align: center;
             padding: 1rem 0;
-            font-size: 0.875rem;
         }
-
-        .upload-user-card .upload-task-title {
-            font-weight: 600;
-            color: #1e40af;
-            font-size: 0.875rem;
-            margin-top: 0.25rem;
-        }
-
-        .upload-user-card .upload-subject-badge {
-            background: #e0f2fe;
-            color: #0369a1;
-            padding: 0.125rem 0.5rem;
-            border-radius: 0.25rem;
-            font-size: 0.7rem;
-            font-weight: 600;
-        }
-
-        /* CSV link bar */
-        .csv-link-bar {
-            background: #f8fafc;
-            border: 1px solid #e5e7eb;
-            border-radius: 0.75rem;
-            padding: 0.75rem 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .csv-link-bar .csv-link {
-            color: #2563eb;
-            font-size: 0.75rem;
-            word-break: break-all;
-            text-decoration: none;
-        }
-
-        .csv-link-bar .csv-link:hover {
-            text-decoration: underline;
-        }
-
-        .csv-link-bar .csv-label {
-            font-weight: 600;
-            color: #374151;
-            font-size: 0.8rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .upload-stats-bar {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem 1.5rem;
-            background: #f0fdf4;
-            border: 1px solid #bbf7d0;
-            border-radius: 0.75rem;
-            padding: 0.75rem 1rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .upload-stats-bar .stat-item {
-            font-size: 0.8rem;
-            color: #166534;
-        }
-
-        .upload-stats-bar .stat-item strong {
-            font-weight: 700;
-        }
-
-        .upload-user-card .expand-indicator {
-            transition: transform 0.3s ease;
-            font-size: 0.875rem;
+        .expand-loading {
+            text-align: center;
+            padding: 1rem 0;
             color: #6b7280;
+            font-size: 0.85rem;
         }
-
-        .upload-user-card .expand-indicator.expanded {
-            transform: rotate(180deg);
-        }
-
-        /* Loading shimmer for upload cards */
-        .upload-card-skeleton {
-            background: white;
-            border-radius: 12px;
-            padding: 1.5rem;
-            border: 2px solid #e5e7eb;
-            animation: pulse 1.5s ease-in-out infinite;
-        }
-
-        @keyframes pulse {
-            0%,
-            100% {
-                opacity: 1;
-            }
-            50% {
-                opacity: 0.5;
-            }
-        }
-
-        .upload-card-skeleton .skeleton-line {
-            height: 1rem;
-            background: #e5e7eb;
-            border-radius: 0.25rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .upload-card-skeleton .skeleton-line:last-child {
-            margin-bottom: 0;
+        .expand-loading i {
+            margin-right: 0.5rem;
         }
     </style>
 </head>
 <body>
-
-    <!-- ===== LOGIN PAGE ===== -->
+    <!-- Login Page -->
     <div id="loginPage" class="min-h-screen flex items-center justify-center p-4">
         <div class="bg-white rounded-2xl shadow-2xl login-container">
+            <!-- Login Section -->
             <div id="loginSection">
                 <div class="text-center mb-6">
                     <h1 class="text-2xl md:text-3xl font-bold text-gray-800">MUQARANA CCE</h1>
@@ -1365,12 +1225,15 @@
                             <input type="text" id="username" name="username" required
                             class="w-full px-3 md:px-4 py-2 md:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300 text-sm md:text-base">
                         </div>
+
                         <div>
                             <label for="password" class="block text-sm font-medium text-gray-700 mb-2">Password</label>
                             <input type="password" id="password" name="password" required
                             class="w-full px-3 md:px-4 py-2 md:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300 text-sm md:text-base">
                         </div>
+
                         <div id="loginError" class="hidden bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg text-sm"></div>
+
                         <button type="submit" class="w-full bg-gradient-to-r from-blue-600 to-green-600 text-white py-2 md:py-3 px-4 rounded-lg hover:from-blue-700 hover:to-green-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 font-semibold transition duration-300 text-sm md:text-base">
                             <i class="fas fa-sign-in-alt mr-2"></i>Sign In
                         </button>
@@ -1378,6 +1241,7 @@
                 </form>
             </div>
 
+            <!-- Signup Section -->
             <div id="signupSection" class="hidden">
                 <div class="text-center mb-4 md:mb-6">
                     <div class="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-blue-600 to-green-600 rounded-2xl mx-auto mb-4 flex items-center justify-center">
@@ -1394,16 +1258,19 @@
                             <input type="text" id="signupName" name="signupName" required
                             class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300 text-sm">
                         </div>
+
                         <div>
                             <label for="signupPhone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number *</label>
                             <input type="tel" id="signupPhone" name="signupPhone" required
                             class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300 text-sm">
                         </div>
+
                         <div>
                             <label for="signupGmail" class="block text-sm font-medium text-gray-700 mb-1">Gmail (Optional)</label>
                             <input type="email" id="signupGmail" name="signupGmail"
                             class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300 text-sm">
                         </div>
+
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                             <div>
                                 <label for="signupState" class="block text-sm font-medium text-gray-700 mb-1">State *</label>
@@ -1416,6 +1283,7 @@
                                 class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300 text-sm">
                             </div>
                         </div>
+
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                             <div>
                                 <label for="signupPlace" class="block text-sm font-medium text-gray-700 mb-1">Place *</label>
@@ -1428,13 +1296,16 @@
                                 class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300 text-sm">
                             </div>
                         </div>
+
                         <div>
                             <label for="signupPinCode" class="block text-sm font-medium text-gray-700 mb-1">Pin Code *</label>
                             <input type="text" id="signupPinCode" name="signupPinCode" required pattern="[0-9]{6}"
                             class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300 text-sm">
                         </div>
+
                         <div id="signupError" class="hidden bg-red-50 border border-red-200 text-red-700 px-3 py-2 rounded-lg text-sm"></div>
                         <div id="signupSuccess" class="hidden bg-green-50 border border-green-200 text-green-700 px-3 py-2 rounded-lg text-sm"></div>
+
                         <button type="submit" class="w-full bg-gradient-to-r from-green-600 to-blue-600 text-white py-2 md:py-3 px-4 rounded-lg hover:from-green-700 hover:to-blue-700 focus:ring-2 focus:ring-green-500 focus:ring-offset-2 font-semibold transition duration-300 text-sm md:text-base">
                             <i class="fas fa-user-plus mr-2"></i>Create Account
                         </button>
@@ -1450,9 +1321,8 @@
         </div>
     </div>
 
-    <!-- ===== DASHBOARD ===== -->
+    <!-- Dashboard Container -->
     <div id="dashboardContainer" class="hidden min-h-screen bg-gray-50">
-
         <!-- Header -->
         <header class="bg-gradient-to-r from-blue-600 to-green-600 text-white shadow-lg">
             <div class="container mx-auto px-2 md:px-4 py-2 md:py-3">
@@ -1463,6 +1333,8 @@
                             <p class="header-subtitle" id="welcomeUser">Welcome</p>
                         </div>
                     </div>
+
+                    <!-- Profile Picture Section -->
                     <div class="relative">
                         <button onclick="toggleProfileMenu()" class="profile-pic-container transition duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 rounded-full">
                             <img id="profilePic" src="" alt="Profile" class="profile-pic" onerror="showProfileFallback(this)">
@@ -1470,6 +1342,8 @@
                                 <i class="fas fa-user"></i>
                             </div>
                         </button>
+
+                        <!-- Profile Dropdown Menu -->
                         <div id="profileMenu" class="profile-menu hidden">
                             <div class="profile-menu-content">
                                 <div class="profile-info">
@@ -1490,7 +1364,7 @@
             </div>
         </header>
 
-        <!-- Student Nav -->
+        <!-- Student Navigation -->
         <nav id="studentNav" class="bg-white shadow-sm border-b hidden">
             <div class="container mx-auto px-2 md:px-4">
                 <div class="flex space-x-1 overflow-x-auto py-2">
@@ -1504,7 +1378,7 @@
             </div>
         </nav>
 
-        <!-- Admin Nav -->
+        <!-- Admin Navigation -->
         <nav id="adminNav" class="bg-white shadow-sm border-b hidden">
             <div class="container mx-auto px-2 md:px-4">
                 <div class="flex space-x-1 overflow-x-auto py-2">
@@ -1524,7 +1398,7 @@
         <!-- Main Content -->
         <main class="container mx-auto main-container">
 
-            <!-- ===== TASKS PAGE (Student) ===== -->
+            <!-- Tasks Page (Student) -->
             <div id="tasksPage" class="page-content hidden">
                 <div class="bg-white rounded-lg shadow-lg p-3 md:p-6">
                     <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4 md:mb-6 gap-2">
@@ -1533,28 +1407,36 @@
                             <p class="text-gray-600 text-sm md:text-base" id="userClass">Loading programs info...</p>
                         </div>
                     </div>
-                    <div id="subjectCards"></div>
+                    <div id="subjectCards">
+                        <!-- Subject cards will be loaded here -->
+                    </div>
                 </div>
             </div>
 
-            <!-- ===== STATUS PAGE (Student) ===== -->
+            <!-- Status Page (Student) -->
             <div id="statusPage" class="page-content hidden">
                 <div class="bg-white rounded-lg shadow-lg p-3 md:p-6">
                     <h2 class="text-xl md:text-2xl font-bold text-green-600 mb-4 md:mb-6">My Progress</h2>
+
+                    <!-- Task Progress Chart -->
                     <div class="bg-gray-50 rounded-lg p-3 md:p-6 mb-4 md:mb-6">
                         <h3 class="text-base md:text-lg font-semibold text-gray-800 mb-3 md:mb-4">Task Completion Progress</h3>
                         <div class="chart-container">
                             <canvas id="taskChart"></canvas>
                         </div>
                     </div>
+
+                    <!-- Subject Points Summary -->
                     <div class="bg-gray-50 rounded-lg p-3 md:p-6">
                         <h3 class="text-base md:text-lg font-semibold text-gray-800 mb-3 md:mb-4">Subject Points Summary</h3>
-                        <div id="subjectPointsGrid" class="subject-points-grid"></div>
+                        <div id="subjectPointsGrid" class="subject-points-grid">
+                            <!-- Subject points will be loaded here -->
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- ===== ADMIN TASKS PAGE ===== -->
+            <!-- Admin Tasks Page -->
             <div id="adminTasksPage" class="page-content hidden">
                 <div class="bg-white rounded-lg shadow-lg p-3 md:p-6">
                     <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4 md:mb-6 gap-2">
@@ -1564,6 +1446,7 @@
                         </div>
                     </div>
 
+                    <!-- Class and Subject Filter -->
                     <div class="admin-filter-section">
                         <h3 class="text-base md:text-lg font-semibold text-gray-800 mb-3 md:mb-4">Select Class and Subject</h3>
                         <div class="filter-grid">
@@ -1587,6 +1470,7 @@
                         </div>
                     </div>
 
+                    <!-- Default View -->
                     <div id="adminTasksDefaultView">
                         <div class="text-center py-6 md:py-8 text-gray-500">
                             <i class="fas fa-arrow-up text-2xl md:text-4xl mb-3 md:mb-4"></i>
@@ -1594,32 +1478,46 @@
                         </div>
                     </div>
 
+                    <!-- Class Subject View -->
                     <div id="adminTasksClassSubjectView" class="hidden">
+                        <!-- Selected Class Subject Info -->
                         <div class="bg-blue-50 rounded-lg p-3 md:p-4 mb-4 md:mb-6">
                             <h3 class="text-base md:text-lg font-semibold text-blue-800">Managing Tasks For:</h3>
                             <p class="text-blue-700 text-sm md:text-base" id="selectedClassSubjectInfo">-</p>
+
+                            <!-- Add Task Button -->
                             <div class="mt-3">
                                 <button onclick="openAddTaskModal()" class="bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-lg font-semibold transition duration-300">
                                     <i class="fas fa-plus mr-2"></i>Add New Task
                                 </button>
                             </div>
                         </div>
+
+                        <!-- Tasks Section -->
                         <div class="tasks-section mb-4 md:mb-6">
                             <h3 class="text-base md:text-lg font-semibold text-gray-800 mb-3 md:mb-4">Available Tasks</h3>
-                            <div id="adminClassSubjectTasksList"></div>
+                            <div id="adminClassSubjectTasksList">
+                                <!-- Tasks will be loaded here -->
+                            </div>
                         </div>
+
+                        <!-- Students Section -->
                         <div class="tasks-section">
                             <h3 class="text-base md:text-lg font-semibold text-gray-800 mb-3 md:mb-4">Students in Class</h3>
-                            <div id="adminClassStudentsList" class="students-grid"></div>
+                            <div id="adminClassStudentsList" class="students-grid">
+                                <!-- Students will be loaded here -->
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- ===== ADMIN STATUS PAGE ===== -->
+            <!-- Admin Status Page -->
             <div id="adminStatusPage" class="page-content hidden">
                 <div class="bg-white rounded-lg shadow-lg p-3 md:p-6">
                     <h2 class="text-xl md:text-2xl font-bold text-blue-600 mb-4 md:mb-6">All Users Status</h2>
+
+                    <!-- User Selection -->
                     <div class="mb-4 md:mb-6 p-3 md:p-4 bg-blue-50 rounded-lg">
                         <div class="flex flex-col md:flex-row md:items-center md:space-x-4 space-y-2 md:space-y-0">
                             <div class="flex-1">
@@ -1630,16 +1528,21 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- No User Selected Message -->
                     <div id="noUserSelected" class="text-center py-8 md:py-12">
                         <i class="fas fa-user-friends text-4xl md:text-6xl text-gray-300 mb-3 md:mb-4"></i>
                         <h3 class="text-lg md:text-xl font-semibold text-gray-500 mb-2">Select a User</h3>
                         <p class="text-gray-500 text-sm md:text-lg">Choose a user from the dropdown above to view their progress and statistics</p>
                     </div>
+
+                    <!-- Selected User Status -->
                     <div id="selectedUserStatus" class="hidden">
                         <div class="mb-4 md:mb-6 p-3 md:p-4 bg-blue-50 rounded-lg">
                             <h3 class="text-lg md:text-xl font-bold text-blue-800" id="selectedUserName">-</h3>
                             <p class="text-blue-700 text-sm md:text-base" id="selectedUserInfo">-</p>
                         </div>
+
                         <div class="bg-gray-50 rounded-lg p-3 md:p-4 mb-4 md:mb-6">
                             <h3 class="text-base md:text-lg font-bold mb-3 md:mb-4 text-blue-600">Task Progress</h3>
                             <div class="chart-container">
@@ -1650,272 +1553,517 @@
                 </div>
             </div>
 
-            <!-- ===== ADMIN UPLOADS PAGE ===== -->
+            <!-- Admin Uploads Page -->
             <div id="adminUploadsPage" class="page-content hidden">
                 <div class="bg-white rounded-lg shadow-lg p-3 md:p-6">
-                    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2 mb-4">
-                        <h2 class="text-xl md:text-2xl font-bold text-blue-600">Student Uploads</h2>
+                    <h2 class="text-xl md:text-2xl font-bold text-blue-600 mb-4 md:mb-6">Student Uploads</h2>
+
+                    <!-- User Selection -->
+                    <div class="mb-4 md:mb-6 p-3 md:p-4 bg-blue-50 rounded-lg">
+                        <div class="flex flex-col md:flex-row md:items-center md:space-x-4 space-y-2 md:space-y-0">
+                            <div class="flex-1">
+                                <label for="uploadUserSelect" class="block text-sm font-medium text-blue-700 mb-2">Select Student to View Uploads:</label>
+                                <select id="uploadUserSelect" class="w-full px-3 py-2 border border-blue-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm md:text-base">
+                                    <option value="">-- Loading Users... --</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
 
-                    <!-- CSV Link Bar -->
-                    <div class="csv-link-bar">
-                        <span class="csv-label">
-                            <i class="fas fa-file-csv text-blue-600"></i>
-                            Uploads CSV:
-                        </span>
-                        <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRBDnB2ltpzcC_wxWenTH1p-snQw1RGkc6n3-C5lF7yOgPXGSS7e6QNU2RrMnPdvFKKh6T0i4bdxolm/pub?gid=1847591719&single=true&output=csv"
-                        target="_blank"
-                        class="csv-link text-sm">
-                        https://docs.google.com/spreadsheets/d/e/2PACX-1vRBDnB2ltpzcC_wxWenTH1p-snQw1RGkc6n3-C5lF7yOgPXGSS7e6QNU2RrMnPdvFKKh6T0i4bdxolm/pub?gid=1847591719&single=true&output=csv
-                    </a>
-                    <button onclick="window.open('https://docs.google.com/spreadsheets/d/e/2PACX-1vRBDnB2ltpzcC_wxWenTH1p-snQw1RGkc6n3-C5lF7yOgPXGSS7e6QNU2RrMnPdvFKKh6T0i4bdxolm/pub?gid=1847591719&single=true&output=csv', '_blank')"
-                    class="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1.5 rounded-lg text-sm font-medium transition">
-                    <i class="fas fa-external-link-alt mr-1"></i>Open CSV
-                </button>
-            </div>
-
-            <!-- Stats Bar -->
-            <div id="uploadStatsBar" class="upload-stats-bar hidden">
-                <span class="stat-item"><strong id="statTotalStudents">0</strong> Students</span>
-                <span class="stat-item"><strong id="statTotalUploads">0</strong> Total Uploads</span>
-                <span class="stat-item"><strong id="statStudentsWithUploads">0</strong> Students with Uploads</span>
-                <span class="stat-item"><strong id="statStudentsWithoutUploads">0</strong> Students without Uploads</span>
-            </div>
-
-            <!-- Loading -->
-            <div id="uploadLoading" class="text-center py-8">
-                <i class="fas fa-spinner fa-spin text-blue-600 text-3xl mb-3"></i>
-                <p class="text-gray-500">Loading uploads data...</p>
-            </div>
-
-            <!-- User Cards Grid -->
-            <div id="uploadUserCardsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <!-- Cards will be rendered here -->
-            </div>
-
-            <!-- No Data -->
-            <div id="uploadNoData" class="hidden text-center py-8">
-                <i class="fas fa-file-pdf text-4xl text-gray-300 mb-3"></i>
-                <p class="text-gray-500">No uploads data available.</p>
-            </div>
-        </div>
-    </div>
-
-</main>
-</div>
-
-<!-- ===== STUDENT TASK MODAL ===== -->
-<div id="studentTaskModal" class="task-assignment-modal hidden">
-    <div class="task-assignment-modal-content">
-        <div class="p-4 md:p-6">
-            <div class="flex justify-between items-center mb-3 md:mb-4">
-                <h3 id="studentTaskModalTitle" class="text-lg md:text-xl font-bold text-blue-600">Student Tasks</h3>
-                <button onclick="closeStudentTaskModal()" class="text-gray-500 hover:text-gray-700 p-1">
-                    <i class="fas fa-times text-lg md:text-xl"></i>
-                </button>
-            </div>
-            <div id="studentTaskModalContent" class="mb-4 md:mb-6 max-h-96 overflow-y-auto"></div>
-            <div class="flex flex-col md:flex-row justify-end space-y-2 md:space-y-0 md:space-x-3">
-                <button onclick="submitSelectedStudentTasks()" class="submit-btn">
-                    <i class="fas fa-check mr-2"></i>Submit Selected Tasks
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- ===== ADD TASK MODAL ===== -->
-<div id="addTaskModal" class="task-assignment-modal hidden">
-    <div class="task-assignment-modal-content">
-        <div class="p-4 md:p-6">
-            <div class="flex justify-between items-center mb-3 md:mb-4">
-                <h3 class="text-lg md:text-xl font-bold text-green-600">Add New Task</h3>
-                <button onclick="closeAddTaskModal()" class="text-gray-500 hover:text-gray-700 p-1">
-                    <i class="fas fa-times text-lg md:text-xl"></i>
-                </button>
-            </div>
-            <form id="addTaskForm">
-                <div class="space-y-4 mb-4 md:mb-6">
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-2">Subject</label>
-                        <input type="text" id="autoSubject" class="w-full px-3 py-2 border border-gray-300 rounded-lg bg-gray-100 text-gray-600" readonly>
+                    <!-- No User Selected Message -->
+                    <div id="noUploadUserSelected" class="text-center py-8 md:py-12">
+                        <i class="fas fa-file-pdf text-4xl md:text-6xl text-gray-300 mb-3 md:mb-4"></i>
+                        <h3 class="text-lg md:text-xl font-semibold text-gray-500 mb-2">Select a Student</h3>
+                        <p class="text-gray-500 text-sm md:text-lg">Choose a student from the dropdown above to view their uploaded files</p>
                     </div>
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-2">Task ID</label>
-                        <input type="text" id="autoTaskId" class="w-full px-3 py-2 border border-gray-300 rounded-lg bg-gray-100 text-gray-600" readonly>
-                    </div>
-                    <div>
-                        <label for="taskTitle" class="block text-sm font-medium text-gray-700 mb-2">Title *</label>
-                        <input type="text" id="taskTitle" name="taskTitle" required
-                        class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition duration-300">
-                    </div>
-                    <div>
-                        <label for="taskDescription" class="block text-sm font-medium text-gray-700 mb-2">Description *</label>
-                        <textarea id="taskDescription" name="taskDescription" required rows="3"
-                        class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition duration-300"></textarea>
-                    </div>
-                    <div>
-                        <label for="taskDueDate" class="block text-sm font-medium text-gray-700 mb-2">Due Date *</label>
-                        <input type="date" id="taskDueDate" name="taskDueDate" required
-                        class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition duration-300">
+
+                    <!-- Selected User Uploads -->
+                    <div id="selectedUserUploads" class="hidden">
+                        <div class="mb-4 md:mb-6 p-3 md:p-4 bg-blue-50 rounded-lg">
+                            <h3 class="text-lg md:text-xl font-bold text-blue-800" id="uploadUserName">-</h3>
+                            <p class="text-blue-700 text-sm md:text-base" id="uploadUserInfo">-</p>
+                        </div>
+                        <div id="uploadTasksList">
+                            <!-- Upload tasks will be loaded here -->
+                        </div>
                     </div>
                 </div>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Student Task Assignment Modal -->
+    <div id="studentTaskModal" class="task-assignment-modal hidden">
+        <div class="task-assignment-modal-content">
+            <div class="p-4 md:p-6">
+                <div class="flex justify-between items-center mb-3 md:mb-4">
+                    <h3 id="studentTaskModalTitle" class="text-lg md:text-xl font-bold text-blue-600">Student Tasks</h3>
+                    <button onclick="closeStudentTaskModal()" class="text-gray-500 hover:text-gray-700 p-1">
+                        <i class="fas fa-times text-lg md:text-xl"></i>
+                    </button>
+                </div>
+
+                <div id="studentTaskModalContent" class="mb-4 md:mb-6 max-h-96 overflow-y-auto">
+                    <!-- Student tasks will be loaded here -->
+                </div>
+
                 <div class="flex flex-col md:flex-row justify-end space-y-2 md:space-y-0 md:space-x-3">
-                    <button type="button" onclick="closeAddTaskModal()" class="bg-gray-500 hover:bg-gray-600 text-white py-2 px-4 rounded-lg font-semibold transition duration-300">
+                    <button onclick="submitSelectedStudentTasks()" class="submit-btn">
+                        <i class="fas fa-check mr-2"></i>Submit Selected Tasks
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Task Modal -->
+    <div id="addTaskModal" class="task-assignment-modal hidden">
+        <div class="task-assignment-modal-content">
+            <div class="p-4 md:p-6">
+                <div class="flex justify-between items-center mb-3 md:mb-4">
+                    <h3 class="text-lg md:text-xl font-bold text-green-600">Add New Task</h3>
+                    <button onclick="closeAddTaskModal()" class="text-gray-500 hover:text-gray-700 p-1">
+                        <i class="fas fa-times text-lg md:text-xl"></i>
+                    </button>
+                </div>
+
+                <form id="addTaskForm">
+                    <div class="space-y-4 mb-4 md:mb-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Subject</label>
+                            <input type="text" id="autoSubject" class="w-full px-3 py-2 border border-gray-300 rounded-lg bg-gray-100 text-gray-600" readonly>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Task ID</label>
+                            <input type="text" id="autoTaskId" class="w-full px-3 py-2 border border-gray-300 rounded-lg bg-gray-100 text-gray-600" readonly>
+                        </div>
+
+                        <div>
+                            <label for="taskTitle" class="block text-sm font-medium text-gray-700 mb-2">Title *</label>
+                            <input type="text" id="taskTitle" name="taskTitle" required
+                            class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition duration-300">
+                        </div>
+
+                        <div>
+                            <label for="taskDescription" class="block text-sm font-medium text-gray-700 mb-2">Description *</label>
+                            <textarea id="taskDescription" name="taskDescription" required rows="3"
+                            class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition duration-300"></textarea>
+                        </div>
+
+                        <div>
+                            <label for="taskDueDate" class="block text-sm font-medium text-gray-700 mb-2">Due Date *</label>
+                            <input type="date" id="taskDueDate" name="taskDueDate" required
+                            class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition duration-300">
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row justify-end space-y-2 md:space-y-0 md:space-x-3">
+                        <button type="button" onclick="closeAddTaskModal()" class="bg-gray-500 hover:bg-gray-600 text-white py-2 px-4 rounded-lg font-semibold transition duration-300">
+                            Cancel
+                        </button>
+                        <button type="submit" class="bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-lg font-semibold transition duration-300">
+                            <i class="fas fa-plus mr-2"></i>Add Task
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Change Password Modal -->
+    <div id="changePasswordModal" class="task-assignment-modal hidden">
+        <div class="task-assignment-modal-content" style="max-width: 400px;">
+            <div class="p-4 md:p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-lg md:text-xl font-bold text-blue-600">Change Password</h3>
+                    <button onclick="closeChangePasswordModal()" class="text-gray-500 hover:text-gray-700 p-1">
+                        <i class="fas fa-times text-lg md:text-xl"></i>
+                    </button>
+                </div>
+
+                <form id="changePasswordForm">
+                    <div class="space-y-4 mb-4">
+                        <div>
+                            <label for="currentPassword" class="block text-sm font-medium text-gray-700 mb-2">Current Password *</label>
+                            <input type="password" id="currentPassword" name="currentPassword" required
+                            class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300">
+                        </div>
+
+                        <div>
+                            <label for="newPassword" class="block text-sm font-medium text-gray-700 mb-2">New Password *</label>
+                            <input type="password" id="newPassword" name="newPassword" required minlength="6"
+                            class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300"
+                            placeholder="Minimum 6 characters">
+                        </div>
+
+                        <div>
+                            <label for="confirmPassword" class="block text-sm font-medium text-gray-700 mb-2">Confirm New Password *</label>
+                            <input type="password" id="confirmPassword" name="confirmPassword" required minlength="6"
+                            class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300">
+                        </div>
+                    </div>
+
+                    <div id="changePasswordError" class="hidden bg-red-50 border border-red-200 text-red-700 px-3 py-2 rounded-lg text-sm mb-4"></div>
+                    <div id="changePasswordSuccess" class="hidden bg-green-50 border border-green-200 text-green-700 px-3 py-2 rounded-lg text-sm mb-4"></div>
+
+                    <div class="flex flex-col md:flex-row justify-end space-y-2 md:space-y-0 md:space-x-3">
+                        <button type="button" onclick="closeChangePasswordModal()" class="bg-gray-500 hover:bg-gray-600 text-white py-2 px-4 rounded-lg font-semibold transition duration-300">
+                            Cancel
+                        </button>
+                        <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg font-semibold transition duration-300">
+                            <i class="fas fa-key mr-2"></i>Change Password
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Student Points Modal -->
+    <div id="editPointsModal" class="task-assignment-modal hidden">
+        <div class="task-assignment-modal-content" style="max-width: 500px;">
+            <div class="p-4 md:p-6">
+                <div class="flex justify-between items-center mb-3 md:mb-4">
+                    <h3 class="text-lg md:text-xl font-bold text-blue-600">Edit Task Points</h3>
+                    <button onclick="closeEditPointsModal()" class="text-gray-500 hover:text-gray-700 p-1">
+                        <i class="fas fa-times text-lg md:text-xl"></i>
+                    </button>
+                </div>
+
+                <div id="editPointsContent">
+                    <!-- Will be populated dynamically -->
+                </div>
+
+                <div id="editPointsError" class="hidden bg-red-50 border border-red-200 text-red-700 px-3 py-2 rounded-lg text-sm mb-4"></div>
+                <div id="editPointsSuccess" class="hidden bg-green-50 border border-green-200 text-green-700 px-3 py-2 rounded-lg text-sm mb-4"></div>
+
+                <div class="flex flex-col md:flex-row justify-end space-y-2 md:space-y-0 md:space-x-3 mt-4">
+                    <button onclick="closeEditPointsModal()" class="bg-gray-500 hover:bg-gray-600 text-white py-2 px-4 rounded-lg font-semibold transition duration-300">
                         Cancel
                     </button>
-                    <button type="submit" class="bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-lg font-semibold transition duration-300">
-                        <i class="fas fa-plus mr-2"></i>Add Task
+                    <button onclick="submitEditedPoints()" class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg font-semibold transition duration-300">
+                        <i class="fas fa-save mr-2"></i>Save Changes
                     </button>
                 </div>
-            </form>
-        </div>
-    </div>
-</div>
-
-<!-- ===== CHANGE PASSWORD MODAL ===== -->
-<div id="changePasswordModal" class="task-assignment-modal hidden">
-    <div class="task-assignment-modal-content" style="max-width:400px;">
-        <div class="p-4 md:p-6">
-            <div class="flex justify-between items-center mb-4">
-                <h3 class="text-lg md:text-xl font-bold text-blue-600">Change Password</h3>
-                <button onclick="closeChangePasswordModal()" class="text-gray-500 hover:text-gray-700 p-1">
-                    <i class="fas fa-times text-lg md:text-xl"></i>
-                </button>
-            </div>
-            <form id="changePasswordForm">
-                <div class="space-y-4 mb-4">
-                    <div>
-                        <label for="currentPassword" class="block text-sm font-medium text-gray-700 mb-2">Current Password *</label>
-                        <input type="password" id="currentPassword" name="currentPassword" required
-                        class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300">
-                    </div>
-                    <div>
-                        <label for="newPassword" class="block text-sm font-medium text-gray-700 mb-2">New Password *</label>
-                        <input type="password" id="newPassword" name="newPassword" required minlength="6"
-                        class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300"
-                        placeholder="Minimum 6 characters">
-                    </div>
-                    <div>
-                        <label for="confirmPassword" class="block text-sm font-medium text-gray-700 mb-2">Confirm New Password *</label>
-                        <input type="password" id="confirmPassword" name="confirmPassword" required minlength="6"
-                        class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300">
-                    </div>
-                </div>
-                <div id="changePasswordError" class="hidden bg-red-50 border border-red-200 text-red-700 px-3 py-2 rounded-lg text-sm mb-4"></div>
-                <div id="changePasswordSuccess" class="hidden bg-green-50 border border-green-200 text-green-700 px-3 py-2 rounded-lg text-sm mb-4"></div>
-                <div class="flex flex-col md:flex-row justify-end space-y-2 md:space-y-0 md:space-x-3">
-                    <button type="button" onclick="closeChangePasswordModal()" class="bg-gray-500 hover:bg-gray-600 text-white py-2 px-4 rounded-lg font-semibold transition duration-300">
-                        Cancel
-                    </button>
-                    <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg font-semibold transition duration-300">
-                        <i class="fas fa-key mr-2"></i>Change Password
-                    </button>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
-
-<!-- ===== EDIT POINTS MODAL ===== -->
-<div id="editPointsModal" class="task-assignment-modal hidden">
-    <div class="task-assignment-modal-content" style="max-width:500px;">
-        <div class="p-4 md:p-6">
-            <div class="flex justify-between items-center mb-3 md:mb-4">
-                <h3 class="text-lg md:text-xl font-bold text-blue-600">Edit Task Points</h3>
-                <button onclick="closeEditPointsModal()" class="text-gray-500 hover:text-gray-700 p-1">
-                    <i class="fas fa-times text-lg md:text-xl"></i>
-                </button>
-            </div>
-            <div id="editPointsContent"></div>
-            <div id="editPointsError" class="hidden bg-red-50 border border-red-200 text-red-700 px-3 py-2 rounded-lg text-sm mb-4"></div>
-            <div id="editPointsSuccess" class="hidden bg-green-50 border border-green-200 text-green-700 px-3 py-2 rounded-lg text-sm mb-4"></div>
-            <div class="flex flex-col md:flex-row justify-end space-y-2 md:space-y-0 md:space-x-3 mt-4">
-                <button onclick="closeEditPointsModal()" class="bg-gray-500 hover:bg-gray-600 text-white py-2 px-4 rounded-lg font-semibold transition duration-300">
-                    Cancel
-                </button>
-                <button onclick="submitEditedPoints()" class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg font-semibold transition duration-300">
-                    <i class="fas fa-save mr-2"></i>Save Changes
-                </button>
             </div>
         </div>
     </div>
-</div>
 
-<script src="cce.js"></script>
+    <script src="cce.js"></script>
 
-<script>
-    // ===== PROFILE MENU =====
-    function toggleProfileMenu() {
-        document.getElementById('profileMenu').classList.toggle('hidden');
-    }
+    <script>
+        // ---- Profile menu functions ----
+        function toggleProfileMenu() {
+            const profileMenu = document.getElementById('profileMenu');
+            profileMenu.classList.toggle('hidden');
+        }
 
-    function showProfileFallback(img) {
-        img.style.display = 'none';
-        document.getElementById('profileFallback').classList.remove('hidden');
-    }
+        function showProfileFallback(img) {
+            const fallback = document.getElementById('profileFallback');
+            img.style.display = 'none';
+            fallback.classList.remove('hidden');
+        }
 
-    function loadUserProfile(username) {
-        const pic = document.getElementById('profilePic');
-        const fallback = document.getElementById('profileFallback');
-        pic.src = `https://quaf.tech/pic/${username}.png`;
-        pic.onerror = function() {
-            this.onerror = function() {
+        function loadUserProfile(username) {
+            const profilePic = document.getElementById('profilePic');
+            const profileName = document.getElementById('profileName');
+            const profileUsername = document.getElementById('profileUsername');
+            const profileFallback = document.getElementById('profileFallback');
+
+            profilePic.src = `https://quaf.tech/pic/${username}.png`;
+            profilePic.onerror = function() {
                 this.onerror = function() {
-                    this.style.display = 'none';
-                    fallback.classList.remove('hidden');
+                    this.onerror = function() {
+                        this.style.display = 'none';
+                        profileFallback.classList.remove('hidden');
+                    };
+                    this.src = `https://quaf.tech/pic/${username}.jpeg`;
                 };
-                this.src = `https://quaf.tech/pic/${username}.jpeg`;
+                this.src = `https://quaf.tech/pic/${username}.jpg`;
             };
-            this.src = `https://quaf.tech/pic/${username}.jpg`;
+
+            profilePic.style.display = 'block';
+            profileFallback.classList.add('hidden');
+
+            if (currentUser) {
+                profileName.textContent = currentUser.name;
+                profileUsername.textContent = `@${username}`;
+            }
+        }
+
+        document.addEventListener('click', function(event) {
+            const profileContainer = event.target.closest('.profile-pic-container');
+            const profileMenu = document.getElementById('profileMenu');
+
+            if (!profileContainer && profileMenu && !profileMenu.classList.contains('hidden')) {
+                profileMenu.classList.add('hidden');
+            }
+        });
+
+        function clearAdminTaskFilters() {
+            document.getElementById('adminTaskClassSelect').value = '';
+            document.getElementById('adminTaskSubjectSelect').value = '';
+            document.getElementById('adminTaskSubjectSelect').disabled = true;
+            document.getElementById('adminTaskSubjectSelect').innerHTML = '<option value="">-- Select Subject --</option>';
+
+            document.getElementById('adminTasksClassSubjectView').classList.add('hidden');
+            document.getElementById('adminTasksDefaultView').classList.remove('hidden');
+        }
+
+        let resizeTimeout;
+        window.addEventListener('resize', function() {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(function() {
+                if (currentPage === 'status') {
+                    Object.values(chartInstances).forEach(chart => {
+                        if (chart) chart.resize();
+                    });
+                }
+                if (currentPage === 'adminStatus') {
+                    Object.values(adminChartInstances).forEach(chart => {
+                        if (chart) chart.resize();
+                    });
+                }
+            }, 250);
+        });
+
+        // ---- Security: disable context menu & dev tools ----
+        document.addEventListener("contextmenu", function(e) {
+            e.preventDefault();
+        });
+
+        document.addEventListener("keydown", function(e) {
+            if (e.key === "F12") {
+                e.preventDefault();
+            }
+            if (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J" || e.key === "C")) {
+                e.preventDefault();
+            }
+            if (e.ctrlKey && (e.key === "u" || e.key === "U")) {
+                e.preventDefault();
+            }
+            if (e.ctrlKey && (e.key === "s" || e.key === "S")) {
+                e.preventDefault();
+            }
+        });
+
+        // ---- Login persistence: restore session on load ----
+        (function restoreSession() {
+            const saved = sessionStorage.getItem('cce_session');
+            if (saved) {
+                try {
+                    const data = JSON.parse(saved);
+                    if (data.user && data.timestamp && (Date.now() - data.timestamp < 24 * 60 * 60 * 1000)) {
+                        // Auto-login
+                        currentUser = data.user;
+                        document.getElementById('loginPage').classList.add('hidden');
+                        document.getElementById('dashboardContainer').classList.remove('hidden');
+                        document.getElementById('welcomeUser').textContent = `Welcome, ${currentUser.name}`;
+                        loadUserProfile(currentUser.username);
+
+                        if (currentUser.role === 'admin') {
+                            document.getElementById('studentNav').classList.add('hidden');
+                            document.getElementById('adminNav').classList.remove('hidden');
+                            loadAdminData().then(() => showPage('adminTasks'));
+                        } else {
+                            document.getElementById('studentNav').classList.remove('hidden');
+                            document.getElementById('adminNav').classList.add('hidden');
+                            loadTasks().then(() => showPage('tasks'));
+                        }
+                        setTimeout(() => preloadCriticalData(), 100);
+                    } else {
+                        sessionStorage.removeItem('cce_session');
+                    }
+                } catch (e) {
+                    sessionStorage.removeItem('cce_session');
+                }
+            }
+        })();
+
+        // ---- Override login to save session ----
+        const originalLogin = login;
+        login = async function() {
+            const username = document.getElementById('username').value.trim();
+            const password = document.getElementById('password').value.trim();
+
+            if (!username || !password) {
+                showError('Please enter both username and password');
+                return;
+            }
+
+            const loginBtn = document.querySelector('#loginForm button[type="submit"]');
+            const originalText = loginBtn.innerHTML;
+            loginBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Signing In...';
+            loginBtn.disabled = true;
+
+            try {
+                const users = await api.getSheet("user_credentials", false);
+                if (!users || users.error || !Array.isArray(users)) {
+                    showError('Failed to fetch user data');
+                    return;
+                }
+                const user = users.find(u => u.username === username && u.password === password);
+
+                if (user) {
+                    currentUser = {
+                        username: user.username,
+                        name: user.full_name || user.username,
+                        role: user.role || 'student',
+                        class: user.class || null,
+                        subjects: user.subjects || null,
+                        userId: user.username
+                    };
+
+                    // Save session
+                    sessionStorage.setItem('cce_session', JSON.stringify({
+                        user: currentUser,
+                        timestamp: Date.now()
+                    }));
+
+                    document.getElementById('loginPage').classList.add('hidden');
+                    document.getElementById('dashboardContainer').classList.remove('hidden');
+                    document.getElementById('welcomeUser').textContent = `Welcome, ${currentUser.name}`;
+                    loadUserProfile(username);
+
+                    if (currentUser.role === 'admin') {
+                        document.getElementById('studentNav').classList.add('hidden');
+                        document.getElementById('adminNav').classList.remove('hidden');
+                        await loadAdminData();
+                        showPage('adminTasks');
+                    } else {
+                        document.getElementById('studentNav').classList.remove('hidden');
+                        document.getElementById('adminNav').classList.add('hidden');
+                        await loadTasks();
+                        showPage('tasks');
+                    }
+                    setTimeout(() => preloadCriticalData(), 100);
+                    hideError();
+
+                    // Push state to prevent back to login
+                    history.pushState(null, '', window.location.href);
+                } else {
+                    showError('Invalid username or password');
+                }
+            } catch (error) {
+                showError('Network error: ' + error.message);
+            } finally {
+                loginBtn.innerHTML = originalText;
+                loginBtn.disabled = false;
+            }
         };
-        pic.style.display = 'block';
-        fallback.classList.add('hidden');
-        if (currentUser) {
-            document.getElementById('profileName').textContent = currentUser.name;
-            document.getElementById('profileUsername').textContent = `@${username}`;
-        }
-    }
 
-    document.addEventListener('click', function(e) {
-        const container = e.target.closest('.profile-pic-container');
-        const menu = document.getElementById('profileMenu');
-        if (!container && menu && !menu.classList.contains('hidden')) {
-            menu.classList.add('hidden');
-        }
-    });
+        // ---- Override logout to clear session ----
+        const originalLogout = logout;
+        logout = function() {
+            sessionStorage.removeItem('cce_session');
+            originalLogout();
+            // Allow back navigation after logout
+            history.pushState(null, '', window.location.href);
+        };
 
-    function clearAdminTaskFilters() {
-        document.getElementById('adminTaskClassSelect').value = '';
-        document.getElementById('adminTaskSubjectSelect').value = '';
-        document.getElementById('adminTaskSubjectSelect').disabled = true;
-        document.getElementById('adminTaskSubjectSelect').innerHTML = '<option value="">-- Select Subject --</option>';
-        document.getElementById('adminTasksClassSubjectView').classList.add('hidden');
-        document.getElementById('adminTasksDefaultView').classList.remove('hidden');
-    }
-
-    let resizeTimeout;
-    window.addEventListener('resize', function() {
-        clearTimeout(resizeTimeout);
-        resizeTimeout = setTimeout(function() {
-            if (currentPage === 'status') {
-                Object.values(chartInstances).forEach(chart => { if (chart) chart.resize(); });
+        // ---- Prevent back navigation to login page after login ----
+        window.addEventListener('popstate', function(e) {
+            if (currentUser && document.getElementById('loginPage') && !document.getElementById('loginPage')
+                .classList.contains('hidden')) {
+                // If we're on login page but user is logged in, force dashboard
+                document.getElementById('loginPage').classList.add('hidden');
+                document.getElementById('dashboardContainer').classList.remove('hidden');
+                history.pushState(null, '', window.location.href);
             }
-            if (currentPage === 'adminStatus') {
-                Object.values(adminChartInstances).forEach(chart => { if (chart) chart.resize(); });
+        });
+
+        // ---- Show signup / login toggle ----
+        function showSignup() {
+            document.getElementById('loginSection').classList.add('hidden');
+            document.getElementById('signupSection').classList.remove('hidden');
+            hideError();
+        }
+
+        function showLogin() {
+            document.getElementById('signupSection').classList.add('hidden');
+            document.getElementById('loginSection').classList.remove('hidden');
+            hideSignupError();
+            hideSignupSuccess();
+        }
+
+        function showError(message) {
+            const errorDiv = document.getElementById('loginError');
+            errorDiv.textContent = message;
+            errorDiv.classList.remove('hidden');
+        }
+
+        function hideError() {
+            document.getElementById('loginError').classList.add('hidden');
+        }
+
+        function showSignupError(message) {
+            const errorDiv = document.getElementById('signupError');
+            errorDiv.textContent = message;
+            errorDiv.classList.remove('hidden');
+        }
+
+        function hideSignupError() {
+            document.getElementById('signupError').classList.add('hidden');
+        }
+
+        function showSignupSuccess(message) {
+            const successDiv = document.getElementById('signupSuccess');
+            successDiv.textContent = message;
+            successDiv.classList.remove('hidden');
+        }
+
+        function hideSignupSuccess() {
+            document.getElementById('signupSuccess').classList.add('hidden');
+        }
+
+        // ---- Submit signup ----
+        async function submitSignup() {
+            const name = document.getElementById('signupName').value.trim();
+            const phone = document.getElementById('signupPhone').value.trim();
+            const gmail = document.getElementById('signupGmail').value.trim();
+            const state = document.getElementById('signupState').value.trim();
+            const district = document.getElementById('signupDistrict').value.trim();
+            const place = document.getElementById('signupPlace').value.trim();
+            const po = document.getElementById('signupPO').value.trim();
+            const pinCode = document.getElementById('signupPinCode').value.trim();
+
+            if (!name || !phone || !state || !district || !place || !po || !pinCode) {
+                showSignupError('Please fill in all required fields');
+                return;
             }
-        }, 250);
-    });
+            if (!/^\d{6}$/.test(pinCode)) {
+                showSignupError('Please enter a valid 6-digit pin code');
+                return;
+            }
 
-    // Security
-    document.addEventListener("contextmenu", function(e) { e.preventDefault(); });
-    document.addEventListener("keydown", function(e) {
-        if (e.key === "F12") e.preventDefault();
-        if (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J" || e.key === "C")) e.preventDefault();
-        if (e.ctrlKey && (e.key === "u" || e.key === "U")) e.preventDefault();
-        if (e.ctrlKey && (e.key === "s" || e.key === "S")) e.preventDefault();
-    });
-</script>
+            const signupBtn = document.querySelector('#signupForm button[type="submit"]');
+            const originalText = signupBtn.innerHTML;
+            signupBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Creating Account...';
+            signupBtn.disabled = true;
 
+            try {
+                const rowData = [
+                    name, phone, gmail || '', state, district, place, po, pinCode,
+                    new Date().toISOString().split('T')[0]
+                ];
+                const result = await api.addRow('registration', rowData);
+                if (result && (result.success || result.includes?.('Success'))) {
+                    showSignupSuccess('Account created successfully! Please contact admin for login credentials.');
+                    document.getElementById('signupForm').reset();
+                    hideSignupError();
+                } else {
+                    throw new Error(result?.error || 'Unknown error occurred');
+                }
+            } catch (error) {
+                console.error('Signup error:', error);
+                showSignupError('Registration failed: ' + error.message);
+            } finally {
+                signupBtn.innerHTML = originalText;
+                signupBtn.disabled = false;
+            }
+        }
+    </script>
 </body>
 </html>
